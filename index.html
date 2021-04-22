@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./sass/hamburger.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0cbd5872d4.js" crossorigin="anonymous"></script>
+    <title>Pizzeria Bazylia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>   
+        <button class="hamburger hamburger--collapse " type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button> 
+        <nav class="nav nav__mobile">    
+            <ul>
+                  <li class="link"><a href="#">home</a></li>
+                  <li class="link"><a href="#menu">menu</a></li>
+                  <li class="link"><a href="#zamow">zamów</a></li>
+                  <li class="link"><a href="#">kontakt</a></li>
+              </ul>
+        </nav>
+        <nav class="nav nav__desktop">
+            <ul>
+                <li class="link-desktop one"><a href="#">home</a></li>
+                <li class="link-desktop one"><a href="#menu">menu</a></li>
+                <li class="link-desktop one"><a href="#">zamów</a></li>
+                <li class="link-desktop one"><a href="#">kontakt</a></li>
+            </ul>
+        </nav>
+        <p class="logo">pizzeria<span class="green-span">Bazylia</span></p>   
+    </header>
+
+    <main>
+        
+        <section class="hero">
+            <div class="bg-shadow">  
+                <div class="hero__wrapper">
+                    <h1 class="animate__animated animate__fadeInLeft" >Najlepsza pizza w Jarocinie!</h1>
+                    <div class="underline animate__animated animate__fadeInRight"></div>
+                    <a class="animate__animated animate__fadeIn glass" href="#zamow">zamów</a>
+                </div>
+                <div class="arrow">
+                    <i class="fas fa-arrow-down animate__animated animate__bounce animate__infinite	"></i>
+                </div>
+            </div>
+        </section>
+        <section id="menu" class="menu-section" >
+           <div class="menu-wrapper">
+               <div class="menu-tittle">
+                   <h2 data-aos="fade">menu</h2>  
+               </div>
+               <div class="gallery">
+                   <div data-aos="fade-right" data-aos-delay="500" class="box "><a data-fslightbox="gallery" href="./img/menu1.jpg"><img src="./img/menu1.jpg" alt=""> </a></div>
+                   <div data-aos="fade-left" data-aos-delay="500" class="box"><a data-fslightbox="gallery" href="./img/menu2.jpg"><img src="./img/menu2.jpg" alt=""> </a></div>
+               </div> 
+            </div>   
+        </section>
+        <section id="zamow" class="order-section">
+            <div class="order">
+                <p data-aos="fade">zamów</p>
+                <p data-aos="fade">663 253 999</p>
+            </div>
+            <div class="map-wrapper">
+                <iframe data-aos="fade-up"  class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2458.7137188191855!2d17.516438315937464!3d51.95741178552059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4705239ac4fe7d57%3A0x3caa997072c851c5!2sKazimierza%20Wielkiego%2014%2C%2063-200%20Jarocin!5e0!3m2!1spl!2spl!4v1618854204727!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <footer>
+            <p>&copy;   <span class="footer-year"></span> pizzeria bazylia: 663 253 999</p>
+        </footer>
+        
+    </main>
+
+    
+ 
+
+    
+<script src="./js/main.js"></script>    
+<script src="./js/fslightbox.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
